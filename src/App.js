@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router1 } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+import './scss/style.scss';
+import Home from './pages/Home';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router1>
+        <Route exact path="/" component={Home} />
+      </Router1>
+    </>
   );
-}
-
+};
 export default App;
