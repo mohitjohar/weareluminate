@@ -1,15 +1,25 @@
 import React from 'react';
 import './style.scss';
-import { Container, Row, Col } from 'reactstrap';
-import { MDBContainer, MDBBtn, MDBAnimation } from 'mdbreact';
+import { Row, Col } from 'reactstrap';
+import { MDBBtn } from 'mdbreact';
 const ImageWithText = () => {
   return (
     <>
       <Row>
-        <Col data-test="animation" className="animated fadeInLeft">
+        <Col
+          data-test="animation"
+          className="animated fadeInLeft bgcover"
+          style={{ backgroundImage: 'url(img/home-team-1.jpg)' }}
+          md={6}
+        >
           <div className="spacer"></div>dfdfdfd
         </Col>
-        <Col data-test="animation" className="animated fadeInRight">
+        <Col
+          data-test="animation"
+          className="animated fadeInRight bgfixed text-light pt-5 pb-5"
+          style={{ backgroundImage: 'url(img/home-star-bg-1.jpg)' }}
+          md={6}
+        >
           <h3>We have your back!</h3>
           <p>
             We advise clients on how to establish secure, compliant, and
