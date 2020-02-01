@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap';
 import { MDBBtn } from 'mdbreact';
 const ImageWithText = () => {
   return (
-    <>
+    <div className="container-fluid">
       <Row>
         <Col
           data-test="animation"
@@ -16,7 +16,7 @@ const ImageWithText = () => {
         </Col>
         <Col
           data-test="animation"
-          className="animated fadeInRight bgfixed text-light pt-5 pb-5"
+          className="animated fadeInRight bgfixed text-light pt-5 pb-5 pl-4 pr-4"
           style={{ backgroundImage: 'url(img/home-star-bg-1.jpg)' }}
           md={6}
         >
@@ -30,7 +30,7 @@ const ImageWithText = () => {
           <MDBBtn color="primary">Meet our amazing team</MDBBtn>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 export default ImageWithText;
