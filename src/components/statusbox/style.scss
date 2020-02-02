@@ -1,0 +1,50 @@
+.statusbox {
+  text-align: center;
+  border: 2px solid #dedede;
+  &:hover,
+  &.active {
+    background-size: cover;
+    &::before {
+      content: '';
+      background-color: rgba(0, 83, 160, 0.7);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    color: #fff;
+  }
+  > div {
+    display: inline-block;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      position: relative;
+      list-style: none;
+      text-align: left;
+      padding-left: 20px;
+      &::before {
+        content: '\f0da';
+        left: 0;
+        position: absolute;
+        font-family: FontAwesome;
+      }
+    }
+  }
+  padding: 20px 30px;
+  background-size: 0;
+  background-position: center;
+}
+
+.left-0 {
+  left: 0 !important;
+}
+.top-0 {
+  right: 0 !important;
+}

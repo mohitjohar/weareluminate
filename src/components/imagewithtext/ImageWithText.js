@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap';
 import { MDBBtn } from 'mdbreact';
 const ImageWithText = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid imagewithtext">
       <Row>
         <Col
           data-test="animation"

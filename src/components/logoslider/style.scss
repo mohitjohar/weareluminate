@@ -1,0 +1,29 @@
+.logoslider {
+  background-color: #f1f1f3;
+  padding: 70px 40px;
+
+  .slick-arrow {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    &::before {
+      color: #000;
+      font-family: FontAwesome;
+    }
+  }
+  .slick-prev {
+    left: -40px;
+    &::before {
+      content: '\f053';
+    }
+  }
+  .slick-next {
+    right: -40px;
+    &::before {
+      content: '\f054';
+    }
+  }
+}
