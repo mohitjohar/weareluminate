@@ -5,6 +5,10 @@ import ImageWithText from '../components/imagewithtext/ImageWithText';
 import PostHoverRead from '../components/posthoverread/PostHoverRead';
 import LogoSlider from '../components/logoslider/LogoSlider';
 import StatusBox from '../components/statusbox/StatusBox';
+import ProductHoverText from '../components/producthovertext/ProductHoverText';
+import ServiceCard from '../components/servicecard/ServiceCard';
+import Contact from './Contact';
+import FAQ from './FAQ';
 
 const Home = () => {
   return (
@@ -17,6 +21,10 @@ const Home = () => {
       <PostHoverRead />
       <LogoSlider />
       <StatusBox />
+      <Contact />
+      <ProductHoverText />
+      <FAQ />
+      <ServiceCard />
     </>
   );
 };

@@ -24,22 +24,25 @@
   }
 }
 
-.custom-btn {
-  display: block;
-  width: 100%;
-  font-size: 18px;
-  max-width: 250px;
-  font-family: Gotham-Medium;
+.servicecard {
+  font-size: 19px;
   text-align: center;
-  color: #12619d;
-  border: 1px solid #12619d;
-  padding: 20px;
-  border-radius: 50px;
-  transition: all 0.5s;
-  margin-top: 30px;
-  &:hover {
-    background-color: #12619d;
-    color: #fff;
-    transition: all 0.5s;
+  .servce-card-img {
+    -webkit-box-shadow: 0 30px 90px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 30px 90px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 30px 90px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    width: 100%;
+    max-width: 170px;
+    height: 170px;
+    text-align: center;
+    padding: 40px;
+    margin: auto auto 25px;
+    border-radius: 15px;
+  }
+  h3 {
+    color: #3b3d3f;
+    font-family: Gotham-Medium;
+    font-size: 22px;
   }
 }

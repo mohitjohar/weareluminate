@@ -1,0 +1,53 @@
+.cstm-card {
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.25);
+  padding: 40px 35px 50px;
+  border-radius: 10px;
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #f0f6f8;
+    position: absolute;
+    top: -93px;
+    opacity: 0.7;
+    right: -47px;
+  }
+
+  .crd-img {
+    background-image: url('../../img/icnshpe.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding: 0 0 0 15px;
+    margin-bottom: 25px;
+    img {
+      min-height: 90px;
+      object-fit: scale-down;
+    }
+  }
+  &.clrcard {
+    background: linear-gradient(
+      135deg,
+      rgba(108, 205, 254, 1) 0%,
+      rgba(61, 131, 223, 1) 100%
+    );
+    color: #fff;
+    .crd-img {
+      background-image: url('../../img/wyt-icnshpe.png');
+    }
+    h4 {
+      color: #fff;
+    }
+  }
+  h4 {
+    color: #3b3d3f;
+    font-family: Gotham-Medium;
+    font-size: 22px;
+  }
+}
