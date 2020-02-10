@@ -1,0 +1,33 @@
+.mk-blog {
+  box-shadow: 0 0 12px 3px #0003;
+  border-radius: 13px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  .mk-blog-body {
+    padding: 23px 30px;
+    .mk-blog-img {
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .entry-date {
+      margin-bottom: 10px;
+      color: #a3a3a3;
+      font-size: 14.17px;
+      font-weight: 500;
+    }
+    .mk-blog-title {
+      display: block;
+      color: #3c3c3c;
+      font-weight: bold;
+      font-size: 19.89px;
+      > a {
+        color: inherit !important;
+      }
+    }
+    .mk-blog-cat {
+      color: #585858;
+      font-size: 15px;
+    }
+  }
+}
