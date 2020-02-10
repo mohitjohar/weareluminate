@@ -12,7 +12,7 @@ const ImageWithText = () => {
           style={{ backgroundImage: 'url(img/home-team-1.jpg)' }}
           md={6}
         >
-          <div className="spacer"></div>dfdfdfd
+          <div className="spacer"></div>
         </Col>
         <Col
           data-test="animation"

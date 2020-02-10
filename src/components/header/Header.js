@@ -8,18 +8,23 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import './style.scss';
 
 const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
   const toggleNavbar = () => setCollapsed(!collapsed);
   return (
     <>
-      <Navbar color="faded" light>
+      <Navbar color="white" light className="main-header">
         <NavbarBrand href="/" className="mr-auto">
-          reactstrap
+          <img src="img/logo.png" />
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-        <Collapse isOpen={!collapsed} navbar>
+        <div className={collapsed ? 'fixed-collapse' : 'fixed-collapse show'}>
+          <i
+            className="fa fa-times position-absolute"
+            onClick={() => setCollapsed(!collapsed)}
+          ></i>
           <Nav navbar>
             <NavItem>
               <NavLink href="/faq">FAQ</NavLink>
@@ -28,8 +33,9 @@ const Header = () => {
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
-        </Collapse>
+        </div>
       </Navbar>
+      <div className="top-space"></div>
     </>
   );
 };

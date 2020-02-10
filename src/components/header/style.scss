@@ -1,0 +1,39 @@
+.main-header {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  .navbar-brand > img {
+    max-width: 96px;
+  }
+}
+
+.top-space {
+  height: 56px;
+}
+
+.fixed-collapse {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: none;
+
+  &.show {
+    display: flex;
+  }
+  i.position-absolute {
+    top: 15px;
+    font-size: 35px;
+    right: 37px;
+    cursor: pointer;
+  }
+  .nav-item a {
+    font-size: 25px;
+  }
+}

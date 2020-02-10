@@ -18,6 +18,7 @@ const ProductHoverText = () => {
       rtecntnt: '*All prices exclude VAT*'
     },
     {
+      active: true,
       img: 'img/Panasonic.webp',
       title: 'Panasonic DZ680',
       desc: 'DLP 6,500 lumens WUXGA',
@@ -48,7 +49,9 @@ const ProductHoverText = () => {
             <>
               <Col>
                 <div
-                  className="producthovertext"
+                  className={
+                    item.active ? 'producthovertext active' : 'producthovertext'
+                  }
                   style={{ backgroundImage: `url(${item.img})` }}
                 >
                   <div className="overlay-product">

@@ -41,12 +41,10 @@ const ServiceCard = () => {
               <Col md={4}>
                 <div className="servicecard mb-5">
                   <div class="servce-card-img">
-                    <img src="https://24hrbookkeeper.com/wp-content/uploads/2018/11/srvce-vctr_02.png" />
+                    <img src={item.img} />
                   </div>
-                  <h3>Construction Software Integration</h3>
-                  We integrate QuickBooks and construction software together for
-                  a streamlined workflow from estimating to project management
-                  to bookkeeping.
+                  <h3>{item.title}</h3>
+                  {item.desc}
                 </div>
               </Col>
             </>
